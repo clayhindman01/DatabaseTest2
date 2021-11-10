@@ -1,0 +1,34 @@
+<html>
+
+</div>
+<form action="add_film.php" method="post" >
+    title:<br> <input type="text" name="title" id='title'><br>
+    description:<br> <input type="text" name="description" minlength=1 maxlength=160><br>
+    release year:<br> <input type="number" name="year" maxlength="4"><br>
+    language id:<br> <input type="number" name="language"><br>
+    rental duration:<br> <input type="number" name="rental"><br>
+    rental rate:<br> <input type="number" name="rate" step = ".01" ><br>
+    length:<br> <input type="number" name="length"><br>
+    Rating:<select name="rating" id="rating">
+        <option value="G">G</option>
+        <option value="PG">PG</option>
+        <option value="PG-13">PG-13</option>
+        <option value="R">R</option>
+        <option value="NC-17">NC-17</option>
+      </select>
+      <br>
+      Features:<select name="features" id="features">
+        <option value="Trailers">Trailers</option>
+        <option value="Commentary">Commentary</option>
+        <option value="Deleted Scenes">Deleted Scenes</option>
+        <option value="Behind the Scenes">Behind the Scenes</option>
+        <option value = null> None </option>
+      </select>
+    <input type="submit" name="submit" value="Submit" id='submit'><br>
+    <a href="manager.html" button class="resetButton" type="reset" value="Reset Form">Reset</button>
+    
+</form>
+
+
+
+</html>
